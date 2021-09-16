@@ -1,21 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+	<meta charset = "utf-8">
 	<title>First site</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel = "stylesheet" type = "text/css" href = "style.css">
 </head>
 <body>
 	<div id = "top">
-		<div class="circle"></div>
+		<div class = "circle"></div>
 		<h1 id = "about_our">О НАС</h1>
-		<h1 id = "title">Это тестовая страница для отображения возможности продуктивности в дальнейшем</h1>
-		<img src = "1.jpg" id = "image">
+		<h1 id = "title">
+			Это тестовая страница для отображения возможности продуктивности в дальнейшем
+		</h1>
+		<img src = "images/notepad.jpg" id = "notepad">
 		<div class="circle2"></div>
 	</div>
 	<div id = "center">
-		<div class = "sqrt"></div>
-		<h1 id = "text1">Шаблон текста №1</h1>
+		<div class = "sqrt">
+			<h1 id = "title_pattern1">Шаблон <br> текста №1</h1>
+			<p id = "text_in_pattern1">
+				Текст текст текст текст   
+				<br>
+				текст текст текст текст   
+				<br> 
+				текст текст текст текст   
+				<br> 
+				текст текст текст текст</p>
+		</div>
 	</div>
+	<img src = "images/headphones.jpg" id = "headphones">
+	<hr>
+	<center>
+		<h1 id = "under_hr">Текст текст текст текст текст текст текст <br> текст текст текст текст текст текст текст</h1>
+	</center>
+	<hr>
+	<br>
+	<div id = "over_futter">
+		<img src = "images/face.jpg" id = "over_futter_image">
+		<p id = "under_face">Текст текст текст текст текст текст текст текст текст</p>
+	</div>
+<div id="overlay">
+    <div class="popup">
+        <h2>Добро пожаловать!</h2>
+        <p id = "text_in_window">
+        	Это маленький одностраничный сайт <br> существующий только для примера
+        </p>
+        <img src = "images/sky.jpg">
+        <button class="close" title="Закрыть" onclick="document.getElementById('overlay').style.display='none';"></button>
+    </div>
+</div>
 </body>
+<footer>
+	<center>
+		<a href = "https://twitter.com/"><img src = "images/icons/twitter.png" id = "twitter"></a>
+		<a href = "https://vk.com/xfnet"><img src = "images/icons/vk.png" id = "vk"></a>
+	</center>
+</footer>
+<script type="text/javascript">
+        var delay_popup = 2000;
+        setTimeout("document.getElementById('overlay').style.display='block'", delay_popup);
+</script>
 </html>
