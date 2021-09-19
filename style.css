@@ -5,7 +5,7 @@
 #top {
 	margin-top: -80px;
 	margin-left: -40px;
-	width: 1012px;
+	width: 105%;
 	background-color: black;
 }
 
@@ -29,7 +29,7 @@ footer {
 	margin-top: -70px;
 }
 
-#twitter, #vk {
+.icons {
 	height: 60px;
 	width: 60px;
 }
@@ -215,3 +215,27 @@ footer {
 .close:hover {
     background-color: rgba(252, 20, 0, 0.8);
 }
+
+@media screen and (max-width: 1280px) {
+	#top {
+		width: 103.8%;
+	}
+
+	#over_futter {
+		width: 640px;
+	}
+
+	#over_futter_image {
+		margin-left: 390px;
+	}
+
+	.icons {
+		margin-top: 20px;
+		height: 30px;
+		width: 30px;
+	}
+
+	footer {
+		width: 101.4%;
+	}
+} 
